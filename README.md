@@ -9,8 +9,9 @@ on X1 Carbon 2nd Generation).
     (xserver-xorg-input-evdev) which enables middle clicking for scrolling. The
     driver emulates three trackpad buttons which do not exist on many 2014
     series ThinkPads (see
-    (http://askubuntu.com/q/443642)[http://askubuntu.com/q/443642]). Moreover,
-    with the new driver you are able to disable movements for part of the
-    touchpad or the complete touchpad to prevent accidental pointer movements.
+    [http://askubuntu.com/q/443642](http://askubuntu.com/q/443642) for
+    pictures). Moreover, with the new driver you are able to disable movements
+    for part of the touchpad or the complete touchpad to prevent accidental
+    pointer movements.
 - `trackpoint-fast.sh`: This script speeds up slow TrackPoints.
 
