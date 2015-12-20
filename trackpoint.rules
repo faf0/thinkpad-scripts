@@ -1,0 +1,3 @@
+# change WAIT_FOR to DEVPATH if this does not work
+SUBSYSTEM=="serio", DRIVERS=="psmouse", DEVPATH="/sys/devices/platform/i8042/serio1/serio2", ATTR{sensitivity}="250", ATTR{speed}="250"
+
