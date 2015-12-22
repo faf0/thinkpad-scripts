@@ -1,3 +1,4 @@
-# change WAIT_FOR to DEVPATH if this does not work
-SUBSYSTEM=="serio", DRIVERS=="psmouse", DEVPATH="/sys/devices/platform/i8042/serio1/serio2", ATTR{sensitivity}="250", ATTR{speed}="250"
+# If this rule does not work, check out the following link for alternatives:
+# http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint
+SUBSYSTEM=="serio", DRIVERS=="psmouse", WAIT_FOR="/sys/devices/platform/i8042/serio1/serio2", ATTR{sensitivity}="255", ATTR{speed}="255"
 
