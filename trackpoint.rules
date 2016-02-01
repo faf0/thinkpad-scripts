@@ -1,4 +1,7 @@
 # If this rule does not work, check out the following link for alternatives:
 # http://www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint
-SUBSYSTEM=="serio", DRIVERS=="psmouse", WAIT_FOR="/sys/devices/platform/i8042/serio1/serio2", ATTR{sensitivity}="255", ATTR{speed}="255"
+
+SUBSYSTEM=="serio", DRIVERS=="psmouse", WAIT_FOR="/sys/devices/platform/i8042/serio1/serio2/sensitivity", ATTR{sensitivity}="255"
+
+SUBSYSTEM=="serio", DRIVERS=="psmouse", WAIT_FOR="/sys/devices/platform/i8042/serio1/serio2/speed", ATTR{speed}="255"
 
