@@ -17,11 +17,16 @@ accidental pointer movements. Disabling the touchpad mouse pointer is useful if
 the TrackPoint is supposed to be the only mouse pointer device.
 
 - On Ubuntu 14.04, use `trackpad-fix.sh`.
-- On Ubuntu 15.10, please install `xserver-xorg-input-libinput` and then
-execute `libinput-disable-touchpad-movements.sh`. Do not execute
+- On Ubuntu 15.10, please install the package
+`xserver-xorg-input-libinput` and then execute
+`libinput-disable-touchpad-movements.sh`. Do not execute
 `trackpad-fix.sh`.
 
 ## TrackPoint Acceleration
 
-`trackpoint-fast.sh`: This script speeds up slow TrackPoints.
+To accelerate your TrackPoint, consider calling one of the following scripts from `~/.xprofile`.
+
+- `trackpoint-fast.sh`: For Ubuntu 14.04.
+- `trackpoint-fast-libinput.sh`: For Ubuntu 15.10. Please install the
+package `xserver-xorg-input-libinput`.
 
