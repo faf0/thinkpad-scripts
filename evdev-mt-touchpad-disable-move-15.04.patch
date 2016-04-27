@@ -1,7 +1,7 @@
 Description: Disables touchpad movements
 Ignores touchpad movement history events in order to disable mouse pointer movements with touchpads (prevents accidental mouse pointer movements while typing). Useful for trackpoint devices.
  .
- libinput (1.2.3-1ubuntu1) xenial; urgency=medium
+ libinput (1.0.1-1ubuntu1) wily; urgency=medium
  .
    * Merge new upstream release from Debian.
 Author: Timo Aaltonen <tjaalton@debian.org>
@@ -19,9 +19,9 @@ Forwarded: <no|not-needed|url proving that it has been forwarded>
 Reviewed-By: <name and email of someone who approved the patch>
 Last-Update: <YYYY-MM-DD>
 
---- libinput-1.2.3.orig/src/evdev-mt-touchpad.c
-+++ libinput-1.2.3/src/evdev-mt-touchpad.c
-@@ -953,7 +953,7 @@ tp_process_state(struct tp_dispatch *tp,
+--- libinput-1.0.1.orig/src/evdev-mt-touchpad.c
++++ libinput-1.0.1/src/evdev-mt-touchpad.c
+@@ -917,7 +917,7 @@ tp_process_state(struct tp_dispatch *tp,
  		tp_palm_detect(tp, t, time);
  
  		tp_motion_hysteresis(tp, t);
