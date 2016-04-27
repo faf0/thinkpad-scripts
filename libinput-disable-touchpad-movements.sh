@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# see https://askubuntu.com/a/737134 for a discussion
 RELEASE=$(lsb_release -r | awk '{ print $2; }')
 PATCH_FILE="evdev-mt-touchpad-disable-move.patch"
 if [[ "$RELEASE" = "15.10" ]]; then
