@@ -8,7 +8,7 @@ if [[ "$RELEASE" = "15.10" ]]; then
 fi
 mkdir tmp-libinput
 cd tmp-libinput
-sudo apt-get install build-essential patch libwacom-dev
+sudo apt-get install build-essential patch dh-autoreconf debhelper fakeroot libmtdev-dev libudev-dev libevdev-dev libwacom-dev
 apt-get source libinput10
 cd libinput-1.?.?
 cp "../../${PATCH_FILE}" debian/patches/
