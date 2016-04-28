@@ -23,8 +23,8 @@ the TrackPoint is supposed to be the only mouse pointer device.
 `trackpad-fix.sh`.
 Script `libinput-disable-touchpad-movements.sh` will fetch the sources of libinput, patch them, build a `.deb` package, and install it.
 Make sure to have the Ubuntu source repositories enabled.
-The script will also install some packages that are needed to build from source.
-If the installation fails due to a missing package dependency, install the dependency remove the folder `tmp-libinput` and run `libinput-disable-touchpad-movements.sh` again.
+The script will also install some packages that are needed to build the package from source.
+If the script fails due to a missing package dependency, install the dependency, remove the folder `tmp-libinput`, and run `libinput-disable-touchpad-movements.sh` again.
 
 ## TrackPoint Acceleration
 
