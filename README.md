@@ -1,7 +1,7 @@
 # About
 
 Scripts for Ubuntu 14.04 and 16.04 (or similar distributions) on Lenovo ThinkPads (tested
-on X1 Carbon 2nd Generation).
+on X1 Carbon 2nd Generation and reported to work on X240).
 
 # Script Descriptions
 
