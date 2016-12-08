@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # see https://askubuntu.com/a/737134 for a discussion
 RELEASE=$(lsb_release -r | awk '{ print $2; }')

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Original script by d3pd from http://askubuntu.com/a/443668
 
