@@ -7,7 +7,7 @@ set -o pipefail
 RELEASE=$(lsb_release -r | awk '{ print $2; }')
 PATCH_FILE="evdev-mt-touchpad-disable-move.patch"
 if [[ "$RELEASE" = "15.10" ]]; then
-        PATCH_FILE="evdev-mt-touchpad-disable-move-15.04.patch"
+        PATCH_FILE="evdev-mt-touchpad-disable-move-15.10.patch"
 fi
 mkdir tmp-libinput
 pushd tmp-libinput
