@@ -16,11 +16,11 @@ possible with `trackpad-fix.sh`) or the complete touchpad (possible with
 accidental pointer movements. Disabling the touchpad mouse pointer is useful if
 the TrackPoint is supposed to be the only mouse pointer device.
 
-- On Ubuntu 14.04, use `14.04/trackpad-fix.sh`.
+- On Ubuntu 14.04, run `cd 14.04/ && ./trackpad-fix.sh`.
 - On Ubuntu 16.04, please install the package
 `xserver-xorg-input-libinput` and then execute
-`16.04/libinput-disable-touchpad-movements.sh`.
-Script `16.04/libinput-disable-touchpad-movements.sh` will fetch the sources of libinput, patch them, build a `.deb` package, and install it.
+`cd 16.04/ && ./libinput-disable-touchpad-movements.sh`.
+Script `libinput-disable-touchpad-movements.sh` will fetch the sources of libinput, patch them, build a `.deb` package, and install it.
 Make sure to have the Ubuntu source repositories enabled.
 The script will also install some packages that are needed to build the package from source.
 If the script fails due to a missing package dependency, install the dependency, remove the folder `tmp-libinput`, and run `libinput-disable-touchpad-movements.sh` again.
