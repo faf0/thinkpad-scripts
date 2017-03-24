@@ -8,7 +8,7 @@ set -o pipefail
 sudo apt-get install git
 sudo apt-get build-dep xserver-xorg-input-evdev xserver-xorg-input-synaptics
 
-mkdir tmp-trackpoint
+mkdir -p tmp-trackpoint
 pushd tmp-trackpoint
 
 git clone https://aur.archlinux.org/xf86-input-evdev-trackpoint.git
@@ -34,6 +34,6 @@ popd
 sudo dpkg -i xserver-xorg-input-evdev_*.deb
 sudo apt-get remove xserver-xorg-input-synaptics
 
-sudo mkdir /etc/X11/xorg.conf.d/
+sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo cp arch/90-evdev-trackpoint.conf /etc/X11/xorg.conf.d
 

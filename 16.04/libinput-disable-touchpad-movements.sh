@@ -6,7 +6,7 @@ set -o pipefail
 # see https://askubuntu.com/a/737134 for a discussion
 RELEASE=$(lsb_release -r | awk '{ print $2; }')
 PATCH_FILE="evdev-mt-touchpad-disable-move.patch"
-mkdir tmp-libinput
+mkdir -p tmp-libinput
 pushd tmp-libinput
 sudo apt-get install build-essential patch dh-autoreconf debhelper fakeroot libmtdev-dev libudev-dev libevdev-dev libwacom-dev
 apt-get source libinput10
