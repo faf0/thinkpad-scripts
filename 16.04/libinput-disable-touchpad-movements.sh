@@ -13,7 +13,7 @@ apt-get source libinput10
 pushd libinput-1.?.?
 cp "../../${PATCH_FILE}" debian/patches/
 echo "$PATCH_FILE" >> debian/patches/series
-dpkg-buildpackage -d
+dpkg-buildpackage -d -uc -us
 popd
 sudo dpkg -i *.deb
 
