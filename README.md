@@ -33,3 +33,14 @@ To accelerate your TrackPoint, consider calling one of the following scripts fro
 - `16.04/trackpoint-fast-libinput.sh`: For Ubuntu 16.04. Please install the
 package `xserver-xorg-input-libinput`.
 
+# Uninstallation
+
+- Ubuntu 14.04: To replace the patched touchpad driver with the original Ubuntu version, run the following commands:
+```bash
+sudo apt-get install xserver-xorg-input-synaptics
+sudo apt-get install --reinstall xserver-xorg-input-evdev
+sudo rm /etc/X11/xorg.conf.d/90-evdev-trackpoint.conf
+```
+- Ubuntu 16.04: To replace the patched touchpad driver with the original Ubuntu version, run `sudo apt-get install --reinstall libinput10`.
+- Ubuntu 14.04 and Ubuntu 16.04: Remove the calls of the TrackPoint acceleration scripts from `~/.xprofile`.
+
